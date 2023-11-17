@@ -27,7 +27,7 @@ export default function EditInvoiceForm({
   const initialState = { message: null, errors: {} };
   const [state, dispatch] = useFormState(updateInvoiceWithId, initialState);
   return (
-    <form action={updateInvoiceWithId}>
+    <form action={dispatch}>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
         {/* Customer Name */}
         <div className="mb-4">
