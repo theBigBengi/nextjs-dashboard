@@ -4,6 +4,7 @@ export const authConfig = {
   pages: {
     signIn: '/login',
   },
+  secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     // The authorized callback is used to verify if the request is authorized to access a page via Next.js Middleware.
     //  It is called before a request is completed, and it receives an object with the auth and request properties.
